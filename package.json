@@ -1,0 +1,15 @@
+{
+  "name": "yente",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "note index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^11.3.2",
+    "discord.js-commando": "^0.10.0"
+  }
+}
