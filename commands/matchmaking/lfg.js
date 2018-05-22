@@ -41,9 +41,7 @@ class lfgCommand extends commando.Command {
             // someone new is available, found a match!
             else {
                 message.reply("I have the perfect match for you! Please play "+g.nextPlayer+"!");
-                var playerMatch = message.author;
-                message.author = g.nextPlayer;
-                message.reply("I found a match for you! Please play "+playerMatch+"!")
+                g.nextPlayer.send("I found a match for you! Please play "+message.author+"!");
                 g.nextPlayer = "";
                 g.expireTime = "";
             }
