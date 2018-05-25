@@ -40,8 +40,8 @@ class lfgCommand extends commando.Command {
             }
             // someone new is available, found a match!
             else {
-                message.reply("I have the perfect match for you! Please play "+g.nextPlayer+"!");
-                g.nextPlayer.send("I found a match for you! Please play "+message.author+"!");
+                message.reply("I have the perfect match for you! Please play "+g.nextPlayer+", then report the result here: https://goo.gl/forms/nFYaxxEP1uKYgNF82");
+                g.nextPlayer.send("I found a match for you! Please play "+message.author+", then report the result here: https://goo.gl/forms/nFYaxxEP1uKYgNF82");
                 g.nextPlayer = "";
                 g.expireTime = "";
             }
