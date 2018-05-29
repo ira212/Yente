@@ -49,7 +49,7 @@ class lfgCommand extends commando.Command {
         }
         // currently no one waiting
         else {
-            message.reply("I'll find you the perfect match in the next " + defaultTime + " minute" + (defaultTime != 1 ? "s" : "") +"! If you must depart before then, just say !cancel. To look for longer, use LFG 30 (or however many minutes you want).");
+            message.reply("I'll find you the perfect match in the next " + defaultTime + " minute" + (defaultTime != 1 ? "s" : "") +"! If you must depart before then, say !cancel. To look for a different amount of time, use LFG 30 (or however many minutes you want).");
             g.nextPlayer = message.author;
             g.expireTime = new Date().getTime() + defaultTime * 60000;
         }
