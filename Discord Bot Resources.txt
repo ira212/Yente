@@ -1,0 +1,17 @@
+
+
+Basic setup
+https://www.youtube.com/watch?v=9CDPw1lCkJ8
+https://www.youtube.com/watch?v=PAYglBPZXY0
+
+Heroku:
+https://www.youtube.com/watch?v=NM8IMyqpvqU
+
+General guide:
+https://discordjs.guide/#/creating-your-bot/
+
+
+https://discord.js.org/#/docs/main/stable/general/welcome
+
+https://www.npmjs.com/package/mysql
+https://github.com/alex-taxiera/eris-boiler/blob/master/classes/DatabaseManager.js
