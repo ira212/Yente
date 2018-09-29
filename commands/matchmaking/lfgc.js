@@ -58,7 +58,7 @@ class lfgcCommand extends commando.Command {
         }
         // currently no one waiting
         else {
-            message.reply("I'll find you the perfect match on Crucible in the next " + defaultTime + " minute" + (defaultTime != 1 ? "s" : "") +"! If you must depart before then, say !cancel. To look for a different amount of time, use LFG 30 (or however many minutes you want).");
+            message.reply("I'll find you the perfect match on Crucible in the next " + defaultTime + " minute" + (defaultTime != 1 ? "s" : "") +"! If you must depart before then, say !cancel. To look for a different amount of time, use LFGC 30 (or however many minutes you want).");
             g.nextPlayerC = message.author;
             g.expireTimeC = new Date().getTime() + defaultTime * 60000;
         }
