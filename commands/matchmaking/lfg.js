@@ -40,7 +40,7 @@ class lfgCommand extends commando.Command {
             // someone new is available, found a match on TTS
             if (g.nextPlayerT != message.author) {
                 message.reply("I have the perfect match for you on TTS! Please play "+g.nextPlayerT.username+" (if you haven't played them before), then report the result here: "+g.reportURL);
-                g.nextPlayerT.send("I found a match for you on TTS or Crucible! Please play "+message.author+" (if you haven't played them before), then report the result here: "+g.reportURL);
+                g.nextPlayerT.send("I found a match for you on TTS! Please play "+message.author+" (if you haven't played them before), then report the result here: "+g.reportURL);
                 // if the author or next player were also waiting on Crucible, remove them from that queue
                 if (g.nextPlayerC == g.nextPlayerT || g.nextPlayerC == message.author) {
                     g.nextPlayerC = "";
@@ -50,9 +50,9 @@ class lfgCommand extends commando.Command {
                 g.expireTimeT = "";
             }
             // someone new is available, found a match on Crucible
-            if (g.nextPlayerC != message.author) {
-                message.reply("I have the perfect match for you on TTS! Please play "+g.nextPlayerC.username+" (if you haven't played them before), then report the result here: "+g.reportURL);
-                g.nextPlayerC.send("I found a match for you on TTS or Crucible! Please play "+message.author+" (if you haven't played them before), then report the result here: "+g.reportURL);
+            else if (g.nextPlayerC != message.author) {
+                message.reply("I have the perfect match for you on Crucible! Please play "+g.nextPlayerC.username+" (if you haven't played them before), then report the result here: "+g.reportURL);
+                g.nextPlayerC.send("I found a match for you on Crucible! Please play "+message.author+" (if you haven't played them before), then report the result here: "+g.reportURL);
                 // if the author or next player were also waiting on TTS, remove them from that queue
                 if (g.nextPlayerT == g.nextPlayerC || g.nextPlayerT == message.author) {
                     g.nextPlayerT = "";
