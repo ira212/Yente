@@ -36,7 +36,7 @@ class lfgtCommand extends commando.Command {
         }
 
         // if there is someone waiting
-        if (g.nextPlayerT != "" || g.nextPlayerC != "") {
+        if (g.nextPlayerT != "") {
             // someone new is available, found a match on TTS
             if (g.nextPlayerT != message.author) {
                 message.reply("I have the perfect match for you on TTS! Please play "+g.nextPlayerT.username+" (if you haven't played them before), then report the result here: "+g.reportURL);
