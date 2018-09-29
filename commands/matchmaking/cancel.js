@@ -12,10 +12,20 @@ class cancelCommand extends commando.Command {
     }
 
     async run(message, args) {
-        if (g.nextPlayer == message.author) {
-            message.reply("I'll stop looking for your perfect match.");
-            g.nextPlayer = "";
+        if (g.nextPlayerT == message.author && g.nextPlayerC == message.author) {
+            message.reply("I'll stop looking for your perfect match for TTS and Crucible.");
+            g.nextPlayerT = "";
+            g.nextPlayerC = "";
         }
+        if (g.nextPlayerT == message.author) {
+            message.reply("I'll stop looking for your perfect match for TTS.");
+            g.nextPlayerT = "";
+        }
+        if (g.nextPlayerC == message.author) {
+            message.reply("I'll stop looking for your perfect match for Crucible.");
+            g.nextPlayerC = "";
+        }
+
     }
 
 }

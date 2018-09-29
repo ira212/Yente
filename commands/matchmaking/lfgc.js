@@ -1,14 +1,14 @@
 const commando = require('discord.js-commando');
 var g = require("../../global");
 
-class lfgCommand extends commando.Command {
+class lfgcCommand extends commando.Command {
     
     constructor(client) {
         super(client, {
-            name: 'lfg',
+            name: 'lfgc',
             group: 'matchmaking',
-            memberName: 'lfg',
-            description: "Search for a match on TTS or Crucible. Times out after 15 minutes by default. Optionally, include a number afterward to specify the number of minutes you'll be available: !LFG 30"
+            memberName: 'lfgc',
+            description: "Search for a match only on Crucible. Times out after 15 minutes by default. Optionally, include a number afterward to specify the number of minutes you'll be available: !LFG 30"
         });
         
     }
@@ -82,4 +82,4 @@ class lfgCommand extends commando.Command {
 
 }
 
-module.exports = lfgCommand;
+module.exports = lfgcCommand;
